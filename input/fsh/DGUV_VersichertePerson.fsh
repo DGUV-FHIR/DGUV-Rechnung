@@ -1,5 +1,5 @@
 Profile: DGUV-Rechnung-PR-VersichertePerson
-Parent: http://fhir.dguv.de/Basis/Patient/DGUV-Basis-PR-VersichertePerson
+Parent: DGUV_Basis_PR_VersichertePerson
 Id: DGUV-Rechnung-PR-VersichertePerson
 Title: "Versicherte Person"
 Description: "Dieses Profil beschreibt die versicherte Person im Zusammenhang mit dem stationären Operationsbericht."
