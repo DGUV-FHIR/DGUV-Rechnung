@@ -1,0 +1,149 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "uv-charge-item",
+  "url": "http://example.org/fhir/ImplementationGuide/example.ig/StructureDefinition/uv-charge-item",
+  "name": "UVChargeItem",
+  "title": "UV Rechnungsposition",
+  "status": "draft",
+  "description": "Eine Rechnungsposition einer UV-Rechnung",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "ChargeItem",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/ChargeItem",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "ChargeItem.extension",
+        "path": "ChargeItem.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "ChargeItem.status",
+        "path": "ChargeItem.status",
+        "patternCode": "billable",
+        "mustSupport": true
+      },
+      {
+        "id": "ChargeItem.code.coding",
+        "path": "ChargeItem.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "ChargeItem.code.coding:GOAE",
+        "path": "ChargeItem.code.coding",
+        "sliceName": "GOAE",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "ChargeItem.code.coding:GOAE.system",
+        "path": "ChargeItem.code.coding.system",
+        "min": 1,
+        "fixedUri": "https://fhir.dguv.de/CodeSystem/uv-goae"
+      },
+      {
+        "id": "ChargeItem.code.coding:GOAE.code",
+        "path": "ChargeItem.code.coding.code",
+        "min": 1
+      },
+      {
+        "id": "ChargeItem.code.coding:GOAE.display",
+        "path": "ChargeItem.code.coding.display",
+        "mustSupport": true
+      },
+      {
+        "id": "ChargeItem.code.coding:IndividualProof",
+        "path": "ChargeItem.code.coding",
+        "sliceName": "IndividualProof",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "ChargeItem.code.coding:IndividualProof.system",
+        "path": "ChargeItem.code.coding.system",
+        "min": 1,
+        "fixedUri": "https://fhir.dguv.de/CodeSystem/uv-cost-line-type"
+      },
+      {
+        "id": "ChargeItem.code.coding:IndividualProof.code",
+        "path": "ChargeItem.code.coding.code",
+        "min": 1,
+        "patternCode": "individual-proof"
+      },
+      {
+        "id": "ChargeItem.code.coding:OtherCost",
+        "path": "ChargeItem.code.coding",
+        "sliceName": "OtherCost",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "ChargeItem.code.coding:OtherCost.system",
+        "path": "ChargeItem.code.coding.system",
+        "min": 1,
+        "fixedUri": "https://fhir.dguv.de/CodeSystem/uv-cost-line-type"
+      },
+      {
+        "id": "ChargeItem.code.coding:OtherCost.code",
+        "path": "ChargeItem.code.coding.code",
+        "min": 1,
+        "patternCode": "other-cost"
+      },
+      {
+        "id": "ChargeItem.subject",
+        "path": "ChargeItem.subject",
+        "mustSupport": true
+      },
+      {
+        "id": "ChargeItem.occurrence[x]",
+        "path": "ChargeItem.occurrence[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "ChargeItem.performer",
+        "path": "ChargeItem.performer",
+        "mustSupport": true
+      },
+      {
+        "id": "ChargeItem.quantity",
+        "path": "ChargeItem.quantity",
+        "mustSupport": true
+      },
+      {
+        "id": "ChargeItem.reason",
+        "path": "ChargeItem.reason",
+        "mustSupport": true
+      },
+      {
+        "id": "ChargeItem.note",
+        "path": "ChargeItem.note",
+        "mustSupport": true
+      }
+    ]
+  }
+}

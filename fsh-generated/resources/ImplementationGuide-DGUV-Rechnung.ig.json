@@ -1,0 +1,48 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "DGUV-Rechnung.ig",
+  "url": "http://example.org/fhir/ImplementationGuide/example.ig/ImplementationGuide/DGUV-Rechnung.ig",
+  "version": "0.0.1",
+  "name": "DGUVRechnung",
+  "status": "draft",
+  "packageId": "org.example.ig",
+  "fhirVersion": [
+    "4.0.1"
+  ],
+  "definition": {
+    "resource": [
+      {
+        "reference": {
+          "reference": "StructureDefinition/uv-invoice"
+        },
+        "name": "UV Rechnung",
+        "description": "Rechnung zur Abrechnung von UV-Leistungen",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/uv-charge-item"
+        },
+        "name": "UV Rechnungsposition",
+        "description": "Eine Rechnungsposition einer UV-Rechnung",
+        "exampleBoolean": false
+      }
+    ],
+    "page": {
+      "nameUrl": "toc.html",
+      "title": "Table of Contents",
+      "generation": "html",
+      "page": []
+    },
+    "parameter": [
+      {
+        "code": "copyrightyear",
+        "value": "2026"
+      },
+      {
+        "code": "releaselabel",
+        "value": "0.0.1"
+      }
+    ]
+  }
+}

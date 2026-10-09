@@ -1,0 +1,11 @@
+id: DGUV-Rechnung.ig
+canonical: http://example.org/fhir/ImplementationGuide/example.ig
+name: DGUV-Rechnung
+status: draft
+version: 0.0.1
+fhirVersion: 4.0.1
+packageId: org.example.ig
+dependencies: {}
+parameters: {}  
+copyrightYear: 2026
+releaseLabel: 0.0.1 

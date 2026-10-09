@@ -1,0 +1,3 @@
+Output File                              Name          Type     FSH File             Lines
+StructureDefinition-uv-charge-item.json  UVChargeItem  Profile  DGUV_ChargeItem.fsh  1 - 68
+StructureDefinition-uv-invoice.json      UVInvoice     Profile  DGUV_Rechnung.fsh    3 - 38

@@ -1,0 +1,18 @@
+[
+  {
+    "outputFile": "StructureDefinition-uv-charge-item.json",
+    "fshName": "UVChargeItem",
+    "fshType": "Profile",
+    "fshFile": "DGUV_ChargeItem.fsh",
+    "startLine": 1,
+    "endLine": 68
+  },
+  {
+    "outputFile": "StructureDefinition-uv-invoice.json",
+    "fshName": "UVInvoice",
+    "fshType": "Profile",
+    "fshFile": "DGUV_Rechnung.fsh",
+    "startLine": 3,
+    "endLine": 38
+  }
+]
