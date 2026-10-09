@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "uv-invoice",
-  "url": "http://example.org/fhir/ImplementationGuide/example.ig/StructureDefinition/uv-invoice",
+  "url": "http://fhir.dguv.de/Rechnung/StructureDefinition/uv-invoice",
   "name": "UVInvoice",
   "title": "UV Rechnung",
   "status": "draft",
@@ -79,7 +79,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://example.org/fhir/ImplementationGuide/example.ig/StructureDefinition/uv-charge-item"
+              "http://fhir.dguv.de/Rechnung/StructureDefinition/uv-charge-item"
             ]
           }
         ],

@@ -1,13 +1,21 @@
 {
   "resourceType": "ImplementationGuide",
   "id": "DGUV-Rechnung.ig",
-  "url": "http://example.org/fhir/ImplementationGuide/example.ig/ImplementationGuide/DGUV-Rechnung.ig",
+  "url": "http://fhir.dguv.de/Rechnung/ImplementationGuide/DGUV-Rechnung.ig",
   "version": "0.0.1",
   "name": "DGUVRechnung",
   "status": "draft",
-  "packageId": "org.example.ig",
+  "packageId": "dguv.rechnung",
   "fhirVersion": [
     "4.0.1"
+  ],
+  "dependsOn": [
+    {
+      "packageId": "dguv.basis",
+      "version": "1.5.2",
+      "uri": "http://fhir.org/packages/dguv.basis/ImplementationGuide/dguv.basis",
+      "id": "dguv_basis"
+    }
   ],
   "definition": {
     "resource": [

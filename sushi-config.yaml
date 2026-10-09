@@ -1,11 +1,12 @@
 id: DGUV-Rechnung.ig
-canonical:  http://fhir.dguv.de/rechnung
+canonical:  http://fhir.dguv.de/Rechnung
 name: DGUV-Rechnung
 status: draft
 version: 0.0.1
 fhirVersion: 4.0.1
 packageId: dguv.rechnung
-dependencies: {}
+dependencies: {
+    dguv.basis: 1.5.2 }
 parameters: {}  
 copyrightYear: 2026
 releaseLabel: 0.0.1 
