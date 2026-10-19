@@ -1,2 +1,16 @@
+[DGUV_Basis_PR_Datenschutz]: StructureDefinition-DGUV-Basis-PR-Datenschutz.html
+[DGUV_Basis_CS_UnfallereignisComponents]: CodeSystem-DGUV-Basis-CS-UnfallereignisComponents.html
+[DGUV_Basis_PR_DiagnoseFreitext]: StructureDefinition-DGUV-Basis-PR-DiagnoseFreitext.html
+[DGUV_Basis_PR_DiagnoseStrukturiert]: StructureDefinition-DGUV-Basis-PR-DiagnoseStrukturiert.html
+[DGUV_Basis_CS_Durchgangsarztverfahren]: CodeSystem-DGUV-Basis-CS-Durchgangsarztverfahren.html
+[DGUV_Basis_EX_Familienversicherung]: StructureDefinition-DGUV-Basis-EX-Familienversicherung.html
+[DGUV_Basis_CS_Formtexte]: CodeSystem-DGUV-Basis-CS-Formtexte.html
+[DGUV_Basis_EX_Frakturklassifikation]: StructureDefinition-DGUV-Basis-EX-Frakturklassifikation.html
+[DGUV_Basis_EX_Pflegeunfall]: StructureDefinition-DGUV-Basis-EX-Pflegeunfall.html
+[DGUV_Basis_VS_UnfallereignisComponents]: ValueSet-DGUV-Basis-VS-UnfallereignisComponents.html
 [UVInvoice]: StructureDefinition-uv-invoice.html
 [UVChargeItem]: StructureDefinition-uv-charge-item.html
+[DGUV_Basis_CS_Verletzungsartenverzeichnis]: CodeSystem-DGUV-Basis-CS-Verletzungsartenverzeichnis.html
+[DGUV_Basis_VS_Verletzungsartenverzeichnis]: ValueSet-DGUV-Basis-VS-Verletzungsartenverzeichnis.html
+[DGUV-Rechnung-PR-VersichertePerson]: StructureDefinition-DGUV-Rechnung-PR-VersichertePerson.html
+[DGUV_Basis_PR_VersichertenVerhaeltnis]: StructureDefinition-DGUV-Basis-PR-VersichertenVerhaeltnis.html

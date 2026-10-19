@@ -21,6 +21,86 @@
     "resource": [
       {
         "reference": {
+          "reference": "StructureDefinition/DGUV-Basis-PR-Datenschutz"
+        },
+        "description": "Dieses Profil dokumentiert, dass ein Arzt bestätigt, einem Patienten die datenschutzrechtlichen Hinweise nach § 201 SGB VII gegeben zu haben. Diese Datenschutzhinweise werden auf Grundlage dieses Gesetzestextes erteilt: https://www.gesetze-im-internet.de/sgb_7/__201.html Der zugehörige DGUV-Formtext (https://www.dguv.de/medien/formtexte/aerzte/f_2000/f2000.pdf).",
+        "exampleBoolean": false,
+        "name": "Datenschutz"
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/DGUV-Basis-CS-UnfallereignisComponents"
+        },
+        "description": "CodeSystem von Eigenschaften eines Unfallereignisses. Sie werden in der Observation.component genutzt um Attribute eines Unfalls zu beschreiben.",
+        "exampleBoolean": false,
+        "name": "DGUV_Basis_CS_UnfallereignisComponents"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/DGUV-Basis-PR-DiagnoseFreitext"
+        },
+        "description": "Dieses Profil bildet die vom Arzt formulierte freitextliche Beschreibung der Unfallverletzung(en) ab.",
+        "exampleBoolean": false,
+        "name": "Diagnose - Freitext"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/DGUV-Basis-PR-DiagnoseStrukturiert"
+        },
+        "description": "Dieses Profil enthält diagnostisch relevante Informationen ausschließlich in strukturierter Form.",
+        "exampleBoolean": false,
+        "name": "Diagnose - strukturiert"
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/DGUV-Basis-CS-Durchgangsarztverfahren"
+        },
+        "description": "Kennzeichen Durchgangsarztverfahren",
+        "exampleBoolean": false,
+        "name": "Durchgangsarztverfahren"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/DGUV-Basis-EX-Familienversicherung"
+        },
+        "description": "Diese Extension ermöglicht die Beschreibung des Versicherungsverhältnisses eines Patienten durch Kennzeichnung als selbst oder familienversichert und im letzteren Fall die Angabe des Namens des eigentlich Versicherten.",
+        "exampleBoolean": false,
+        "name": "Familienversicherung (Erweiterung)"
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/DGUV-Basis-CS-Formtexte"
+        },
+        "description": "CodeSystem mit Codes und Displays zur Darstellung von Formtexttypen",
+        "exampleBoolean": false,
+        "name": "Formtexte"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/DGUV-Basis-EX-Frakturklassifikation"
+        },
+        "description": "Diese Extension ermöglicht über einen Boolean-Wert die Kennzeichnung von Frakturen sowie die Angabe der zugehörigen AO-Klassifikationen in einem String.",
+        "exampleBoolean": false,
+        "name": "Frakturklassifikation (Erweiterung)"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/DGUV-Basis-EX-Pflegeunfall"
+        },
+        "description": "Diese Extension ermöglicht die Kennzeichnung eines Unfallereignisses als Pflegeunfall und in diesem Fall die Referenzierung auf die Pflegekasse der pflegebedürftigen Person.",
+        "exampleBoolean": false,
+        "name": "Pflegeunfall (Erweiterung)"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/DGUV-Basis-VS-UnfallereignisComponents"
+        },
+        "description": "Terminologien zur Angabe von Eigenschaften eines Unfallereignisses.",
+        "exampleBoolean": false,
+        "name": "UnfallereignisComponents"
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/uv-invoice"
         },
         "name": "UV Rechnung",
@@ -34,6 +114,38 @@
         "name": "UV Rechnungsposition",
         "description": "Eine Rechnungsposition einer UV-Rechnung",
         "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/DGUV-Basis-CS-Verletzungsartenverzeichnis"
+        },
+        "description": "Verletzungsartenverzeichnis mit Erläuterungen unter Einschluss des Schwerstverletzungsartenverfahrens",
+        "exampleBoolean": false,
+        "name": "Verletzungsartenverzeichnis"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/DGUV-Basis-VS-Verletzungsartenverzeichnis"
+        },
+        "description": "Terminologien für die Verwendung des Verletzungsartenverzeichnis",
+        "exampleBoolean": false,
+        "name": "Verletzungsartenverzeichnis"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/DGUV-Rechnung-PR-VersichertePerson"
+        },
+        "name": "Versicherte Person",
+        "description": "Dieses Profil beschreibt die versicherte Person im Zusammenhang mit dem stationären Operationsbericht.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/DGUV-Basis-PR-VersichertenVerhaeltnis"
+        },
+        "description": "Dieses Profil bildet das Verhältnis des Patienten zur Versicherung ab (direkt oder familienversichert).",
+        "exampleBoolean": false,
+        "name": "Versichertenverhältnis"
       }
     ],
     "page": {

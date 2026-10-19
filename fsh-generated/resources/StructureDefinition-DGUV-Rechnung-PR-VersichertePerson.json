@@ -1,0 +1,172 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "DGUV-Rechnung-PR-VersichertePerson",
+  "url": "http://fhir.dguv.de/Rechnung/Patient/DGUV-Rechnung-PR-VersichertePerson",
+  "version": "0.1",
+  "name": "DGUV-Rechnung-PR-VersichertePerson",
+  "title": "Versicherte Person",
+  "status": "draft",
+  "publisher": "Deutsche Gesetzliche Unfallversicherung e.V. (DGUV)",
+  "description": "Dieses Profil beschreibt die versicherte Person im Zusammenhang mit dem stationären Operationsbericht.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Patient",
+  "baseDefinition": "http://fhir.dguv.de/Basis/Patient/DGUV-Basis-PR-VersichertePerson",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Patient.id",
+        "path": "Patient.id",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.meta",
+        "path": "Patient.meta",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.meta.profile",
+        "path": "Patient.meta.profile",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.name",
+        "path": "Patient.name",
+        "short": "Name der versicherten Person",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.name:Name",
+        "path": "Patient.name",
+        "sliceName": "Name",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.name:Name.use",
+        "path": "Patient.name.use",
+        "definition": "Abgrenzung von offiziellem Namen, Geburtsnamen, Künstlernamen usw. voneinander",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.name:Name.family",
+        "path": "Patient.name.family",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.name:Name.family.extension",
+        "path": "Patient.name.family.extension",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.name:Name.family.extension:namenszusatz",
+        "path": "Patient.name.family.extension",
+        "sliceName": "namenszusatz",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.name:Name.family.extension:namenszusatz.extension",
+        "path": "Patient.name.family.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Patient.name:Name.family.extension:namenszusatz.value[x]",
+        "path": "Patient.name.family.extension.value[x]",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.name:Name.family.extension:nachname",
+        "path": "Patient.name.family.extension",
+        "sliceName": "nachname",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.name:Name.family.extension:nachname.value[x]",
+        "path": "Patient.name.family.extension.value[x]",
+        "short": "Konkreter Nachname",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.name:Name.family.extension:vorsatzwort",
+        "path": "Patient.name.family.extension",
+        "sliceName": "vorsatzwort",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.name:Name.family.extension:vorsatzwort.value[x]",
+        "path": "Patient.name.family.extension.value[x]",
+        "short": "Konkretes Vorsatzwort",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.name:Name.given",
+        "path": "Patient.name.given",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.name:Name.prefix",
+        "path": "Patient.name.prefix",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.name:Name.prefix.extension",
+        "path": "Patient.name.prefix.extension",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.name:Name.prefix.extension:prefix-qualifier",
+        "path": "Patient.name.prefix.extension",
+        "sliceName": "prefix-qualifier",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.name:Name.prefix.extension:prefix-qualifier.value[x]",
+        "path": "Patient.name.prefix.extension.value[x]",
+        "definition": "Konkrete Spezialisierung der Präfixart",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.name:Name.suffix",
+        "path": "Patient.name.suffix",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.name:Geburtsname",
+        "path": "Patient.name",
+        "sliceName": "Geburtsname",
+        "max": "0"
+      },
+      {
+        "id": "Patient.birthDate",
+        "path": "Patient.birthDate",
+        "short": "Geburtsdatum des Patienten",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.birthDate.extension",
+        "path": "Patient.birthDate.extension",
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.birthDate.extension:data_absent_reason",
+        "path": "Patient.birthDate.extension",
+        "sliceName": "data_absent_reason",
+        "definition": "Grund, warum das richtige Geburtsdatum nicht vorliegt",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.birthDate.extension:data_absent_reason.value[x]",
+        "path": "Patient.birthDate.extension.value[x]",
+        "short": "Kürzel des konkreten Grundes für Fehlen des Geburtsdatums",
+        "mustSupport": true
+      }
+    ]
+  }
+}

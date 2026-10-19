@@ -1,5 +1,13 @@
 [
   {
+    "outputFile": "StructureDefinition-DGUV-Rechnung-PR-VersichertePerson.json",
+    "fshName": "DGUV-Rechnung-PR-VersichertePerson",
+    "fshType": "Profile",
+    "fshFile": "DGUV_VersichertePerson.fsh",
+    "startLine": 1,
+    "endLine": 71
+  },
+  {
     "outputFile": "StructureDefinition-uv-charge-item.json",
     "fshName": "UVChargeItem",
     "fshType": "Profile",
