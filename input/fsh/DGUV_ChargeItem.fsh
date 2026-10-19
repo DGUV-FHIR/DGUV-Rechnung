@@ -4,7 +4,7 @@ Id: uv-charge-item
 Title: "UV Rechnungsposition"
 Description: "Eine Rechnungsposition einer UV-Rechnung"
 
-* extension contains UVChargeItemType named positionType 1..1 MS
+//* extension contains UVChargeItemType named positionType 1..1 MS
 
 * status 1..1 MS
 * status = #billable

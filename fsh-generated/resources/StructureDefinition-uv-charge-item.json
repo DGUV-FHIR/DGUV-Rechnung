@@ -15,20 +15,6 @@
   "differential": {
     "element": [
       {
-        "id": "ChargeItem.extension",
-        "path": "ChargeItem.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        }
-      },
-      {
         "id": "ChargeItem.status",
         "path": "ChargeItem.status",
         "patternCode": "billable",

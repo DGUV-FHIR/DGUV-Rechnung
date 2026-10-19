@@ -10,7 +10,4 @@
 [DGUV_Basis_VS_UnfallereignisComponents]: ValueSet-DGUV-Basis-VS-UnfallereignisComponents.html
 [UVInvoice]: StructureDefinition-uv-invoice.html
 [UVChargeItem]: StructureDefinition-uv-charge-item.html
-[DGUV_Basis_CS_Verletzungsartenverzeichnis]: CodeSystem-DGUV-Basis-CS-Verletzungsartenverzeichnis.html
-[DGUV_Basis_VS_Verletzungsartenverzeichnis]: ValueSet-DGUV-Basis-VS-Verletzungsartenverzeichnis.html
 [DGUV-Rechnung-PR-VersichertePerson]: StructureDefinition-DGUV-Rechnung-PR-VersichertePerson.html
-[DGUV_Basis_PR_VersichertenVerhaeltnis]: StructureDefinition-DGUV-Basis-PR-VersichertenVerhaeltnis.html

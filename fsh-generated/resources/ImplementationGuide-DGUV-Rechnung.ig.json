@@ -117,35 +117,11 @@
       },
       {
         "reference": {
-          "reference": "CodeSystem/DGUV-Basis-CS-Verletzungsartenverzeichnis"
-        },
-        "description": "Verletzungsartenverzeichnis mit Erläuterungen unter Einschluss des Schwerstverletzungsartenverfahrens",
-        "exampleBoolean": false,
-        "name": "Verletzungsartenverzeichnis"
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/DGUV-Basis-VS-Verletzungsartenverzeichnis"
-        },
-        "description": "Terminologien für die Verwendung des Verletzungsartenverzeichnis",
-        "exampleBoolean": false,
-        "name": "Verletzungsartenverzeichnis"
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/DGUV-Rechnung-PR-VersichertePerson"
         },
         "name": "Versicherte Person",
         "description": "Dieses Profil beschreibt die versicherte Person im Zusammenhang mit dem stationären Operationsbericht.",
         "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/DGUV-Basis-PR-VersichertenVerhaeltnis"
-        },
-        "description": "Dieses Profil bildet das Verhältnis des Patienten zur Versicherung ab (direkt oder familienversichert).",
-        "exampleBoolean": false,
-        "name": "Versichertenverhältnis"
       }
     ],
     "page": {

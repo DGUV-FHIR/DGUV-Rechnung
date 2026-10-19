@@ -5,7 +5,7 @@
     "fshType": "Profile",
     "fshFile": "DGUV_VersichertePerson.fsh",
     "startLine": 1,
-    "endLine": 71
+    "endLine": 54
   },
   {
     "outputFile": "StructureDefinition-uv-charge-item.json",
