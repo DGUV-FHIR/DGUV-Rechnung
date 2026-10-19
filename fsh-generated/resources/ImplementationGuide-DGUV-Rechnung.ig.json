@@ -34,6 +34,14 @@
         "name": "UV Rechnungsposition",
         "description": "Eine Rechnungsposition einer UV-Rechnung",
         "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/DGUV-Rechnung-PR-VersichertePerson"
+        },
+        "name": "Versicherte Person",
+        "description": "Dieses Profil beschreibt die versicherte Person im Zusammenhang mit dem stationären Operationsbericht.",
+        "exampleBoolean": false
       }
     ],
     "page": {

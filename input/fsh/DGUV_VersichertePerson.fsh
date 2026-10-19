@@ -11,47 +11,34 @@ Description: "Dieses Profil beschreibt die versicherte Person im Zusammenhang mi
 
 * id MS
 
-* meta 1..1 MS
+* meta MS
+* meta.profile MS
 
-* meta.profile 1..* MS
-* meta.profile contains operProfile 1..1 MS
-* meta.profile[operProfile] = "http://fhir.dguv.de/Rechnung/Patient/DGUV-Rechnung-PR-VersichertePerson"
-
+* name MS
 * name ^short = "Name der versicherten Person"
-* name 0..1 MS
-* name ^slicing.rules = #open
 
-* name contains
-    Name 0..* MS and
-    Geburtsname 0..0
-
+* name[Name] MS
 * name[Name].use MS
 * name[Name].use ^definition = "Abgrenzung von offiziellem Namen, Geburtsnamen, Künstlernamen usw. voneinander"
 
 * name[Name].family MS
 
-* name[Name].family.extension 0..3 MS
-* name[Name].family.extension contains
-    namenszusatz 0..* MS and
-    nachname 0..* MS and
-    vorsatzwort 0..* MS
+* name[Name].family.extension[namenszusatz] MS
+* name[Name].family.extension[namenszusatz].value[x] MS
 
-* name[Name].family.extension[namenszusatz].value[x] 1..1 MS
-
+* name[Name].family.extension[nachname] MS
 * name[Name].family.extension[nachname].value[x] MS
 * name[Name].family.extension[nachname].value[x] ^short = "Konkreter Nachname"
 
+* name[Name].family.extension[vorsatzwort] MS
 * name[Name].family.extension[vorsatzwort].value[x] MS
 * name[Name].family.extension[vorsatzwort].value[x] ^short = "Konkretes Vorsatzwort"
 
-* name[Name].given 1..1 MS
+* name[Name].given MS
 
 * name[Name].prefix MS
-* name[Name].prefix.extension MS
 
-* name[Name].prefix.extension contains
-    prefix-qualifier 0..* MS
-
+* name[Name].prefix.extension[prefix-qualifier] MS
 * name[Name].prefix.extension[prefix-qualifier].value[x] MS
 * name[Name].prefix.extension[prefix-qualifier].value[x] ^definition = "Konkrete Spezialisierung der Präfixart"
 
@@ -60,11 +47,7 @@ Description: "Dieses Profil beschreibt die versicherte Person im Zusammenhang mi
 * birthDate MS
 * birthDate ^short = "Geburtsdatum des Patienten"
 
-* birthDate.extension 0..1 MS
-
-* birthDate.extension contains
-    data_absent_reason 0..1 MS
-
+* birthDate.extension[data_absent_reason] MS
 * birthDate.extension[data_absent_reason] ^definition = "Grund, warum das richtige Geburtsdatum nicht vorliegt"
 
 * birthDate.extension[data_absent_reason].value[x] MS
